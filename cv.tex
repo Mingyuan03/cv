@@ -1,10 +1,4 @@
-%-------------------------
-% Resume in Latex
-% Based off of: https://github.com/sb2nov/resume
-% License : MIT
-%------------------------
-
-\documentclass[letterpaper,10pt]{article}
+\documentclass[letterpaper,7pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -40,11 +34,11 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\oddsidemargin}{-0.7in}
+\addtolength{\evensidemargin}{-0.7in}
+\addtolength{\textwidth}{1.4in}
+\addtolength{\topmargin}{-.75in}
+\addtolength{\textheight}{1.4in}
 
 \urlstyle{same}
 
@@ -53,9 +47,7 @@
 \setlength{\tabcolsep}{0in}
 
 % Sections formatting
-\titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+\titleformat{\section}{\vspace{-6pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -63,43 +55,31 @@
 %-------------------------
 % Custom commands
 \newcommand{\link}[2]{\href{#1}{\color{blue}\underline{#2}}}
-
-\newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
-}
-
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
+  \vspace{-3pt}\item
   \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
     \textbf{#1} & #2 \\
     \textit{\small#3} & \textit{\small #4} \\
-  \end{tabular*}\vspace{-7pt}
+  \end{tabular*}\vspace{-8pt}
 }
-
 \newcommand{\resumeSubSubheading}[2]{
   \item
   \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
     \textit{\small#1} & \textit{\small #2} \\
-  \end{tabular*}\vspace{-7pt}
+  \end{tabular*}\vspace{-8pt}
 }
-
 \newcommand{\resumeProjectHeading}[2]{
   \item
   \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
     \small#1 & #2 \\
-  \end{tabular*}\vspace{-7pt}
+  \end{tabular*}\vspace{-8pt}
 }
-
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-5pt}}
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-
 \newenvironment{resumeSubHeadingList}{\begin{itemize}[leftmargin=0.15in, label={}]}{\end{itemize}}
 \newenvironment{resumeItemList}{\begin{itemize}}{\end{itemize}}
-\newenvironment{resumeItemSubList}{\begin{itemize}\setlength\itemsep{0.4em}}{\end{itemize}\vspace{-5pt}}
-
+\newenvironment{resumeItemSubList}{\begin{itemize}\setlength\itemsep{0.1em}}{\end{itemize}\vspace{-6pt}}
 \newcommand{\awardsTable}[1]{
 	\begin{tabularx}{\textwidth}{llllll}
 	\emph{Name}	& \emph{Placing}	& \emph{Type}	& \emph{Scope}	& \emph{Awarder}                 & \emph{Year}       \\
@@ -112,293 +92,95 @@
 }
 
 \fancyfoot[L]{
-  \small \LaTeX\ Source: \link{https://github.com/zeyu2001/cv}{github.com/zeyu2001/cv} $|$ 
-  Web Version: \link{https://cv.analogue.computer}{cv.analogue.computer}
+  \small \LaTeX\ Source: \link{https://github.com/Mingyuan03/cv}{github.com/Mingyuan03/cv}
 }
 \renewcommand\footrule{\hrule width\textwidth}
-
 %-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{document}
-
 \begin{center}
-  \textbf{\huge \scshape Zeyu (Zayne) Zhang} \\ \vspace{1pt}
-  \small Email: \link{mailto:ping@analogue.computer}{ping@analogue.computer} $|$ Website: \link{https://www.analogue.computer}{analogue.computer} $|$ LinkedIn: \link{https://www.linkedin.com/in/zhang-zeyu}{www.linkedin.com/in/zhang-zeyu}
+  \textbf{\huge \scshape Mingyuan (Thomas) Lu} \\ \vspace{1pt}
+  \small Email: \link{mailto:thomas.mingyuan02@gmail.com}{thomas.mingyuan02@gmail.com} $|$ Phone: +65 9783 7588 $|$ LinkedIn: \link{https://www.linkedin.com/in/mingyuan-lu}{www.linkedin.com/in/mingyuan-lu}
 \end{center}
 
 \section{Education}
 \begin{resumeSubHeadingList}
-  \resumeSubheading
-    {University of Cambridge}{Oct. 2023 -- Jun. 2025 (on leave of absence)}
-    {B.A. (Hons) in Computer Science}{Cambridge, England}
-    \begin{resumeItemList}
-      \resumeItem{\textbf{Grade: 1st Class.}
-        Highest mark for Object-Oriented Programming.
-        Top 5 in: Databases, Discrete Mathematics, Machine Learning \& Real-world Data, Software \& Security Engineering.}
-
-      \resumeItem{Cybersecurity Society: Secretary (2024/25) -- Represented the
-                  University in various international competitions.}
-
-        \begin{resumeItemSubList}
-          \resumeItem{1st place at pwnEd5 finals, hosted by the University of Edinburgh.}
-          \resumeItem{2nd place at the global finals of LakeCTF 2024, hosted by the Swiss Federal Institute of Technology Lausanne.}
-          \resumeItem{3rd place at European finals of CSAW CTF 2023, hosted by New York University.}
-        \end{resumeItemSubList}
-
-      \resumeItem{Hughes Hall May Ball (2023/24) -- Developed \link{https://www.hughesmayball.co.uk}{www.hughesmayball.co.uk} and managed
-       domain. \textit{React $\cdot$ TailwindCSS} }
-      \resumeItem{CUMSA Database Officer (2024/25) -- Revamped \link{https://membership.cumsa.org/}{membership.cumsa.org} and admin panel.
-       \textit{Next.js $\cdot$ DynamoDB} }
-    \end{resumeItemList}
+\resumeSubheading{National University of Singapore}{Aug. 2023 -- Present}{Bachelor of Computing (Hons) in Computer Science (Double Degree)}{Singapore}
+\begin{resumeItemList}
+    \resumeItem{\textbf{Grade: 1st Class.} GPA: 4.58/5.00}
+    \resumeItem{Dean's List in AY 2024/2025 Semester 1 (Awarded to top $5\%$ of $1022$ Year $2$ Computing cohort}
+    \resumeItem{\textbf{Focus Areas}: Database Systems, Algorithms and Theory}
+    \resumeItem{\textbf{Notable Coursework}: Database Systems (A), Big Data Systems for Data Science (A+), Data Structures and Algorithms (A), Design and Analysis of Algorithms (A-)}
+\end{resumeItemList}
+\resumeSubheading{National University of Singapore}{Aug. 2023 -- Present}{Bachelor of Science (Hons) in Mathematics (Double Degree)}{Singapore}
+\begin{resumeItemList}
+    \resumeItem{\textbf{Grade: 1st Class.} GPA: 4.70/5.00}
+    \resumeItem{Conditional Offer to enrol in Special Programme in Mathematics (SPM) courses for the mathematically-gifted}
+    \resumeItem{\textbf{Focus Areas}: Applied Mathematics}
+    \resumeItem{\textbf{Notable Coursework}: Probability (A), Statistics (A+), Statistical Computing in R (A+), Calculus for Computing (A+)}
+\end{resumeItemList}
+\resumeSubheading{Raffles Junior College}{Jan. 2019 -- Dec. 2020}{GCE Advanced Level}{Singapore}
+\begin{resumeItemList}
+    \resumeItem{\textbf{Rank Point: 87.75/90.00.} 7 Distinctions, including Distinction in H3 Mathematics}
+    \resumeItem{\textbf{Talent Programmes}: Raffles Academy (Mathematics \& Physics) - Dual programmes admitting top $25$ students per subject yearly}
+\end{resumeItemList}
 \end{resumeSubHeadingList}
 
-\section{Experience}
+\section{Work \& Academic Experience}
 \begin{resumeSubHeadingList}
-
-  \resumeSubheading
-    {Hacktron AI}{Apr. 2025 -- Present}
-    {Co-Founder}{Remote}
-    \begin{resumeItemList}
-      \resumeItem{Building a fully autonomous security researcher. Raised
-                  \EurCr400k via YC post-money SAFE at \EurCr6M valuation cap.}
-    \end{resumeItemList}
-    \vspace{2pt}
-
-  \resumeSubheading
-    {Open Government Products}{Jun. 2024 -- Sep. 2024}
-    {Software Engineer Intern}{Singapore}
-    \begin{resumeItemList}
-      \resumeItem{Built \& shipped a Next.js app used by HR and team leads to
-                  visualize and preview changes to access control policies on
-                  the organization's GitOps access control solution, reducing
-                  human error. This replaces previously ClickOps-heavy
-                  workflows.}
-      \resumeItem{Used Pulumi infrastructure as code to build a Better Stack
-                  integration that reduces time-to-triage for vulnerability
-                  reports from several hours to $<$ 1 minute.}
-      \resumeItem{Initiated and led a project to build open-source
-                  secure-by-default components used by developers in production
-                  systems and our starter kit template, making application
-                  security easy and invisible. Remediated a Next.js 0-day in
-                  the process. }
-      \resumeItem{Configured CI/CD pipelines including automated NPM package
-                  publishing, changelog generation, documentation generation
-                  from TSDoc comments (published to a documentation website),
-                  testing and deployment.}
-      \resumeItem{Initiated and configured advanced static code analysis
-                  pipelines across the organization. Wrote and published custom
-                  CodeQL query packs and libraries for data flow analysis on
-                  common technologies used, including Next.js, React, and
-                  tRPC.}
-    \end{resumeItemList}
-
-    \vspace{-2pt}\item\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{Insight Programmes} & 2024 \\
-    \end{tabular*}\vspace{-7pt}
-    \begin{resumeItemList}
-      \resumeItem{\textbf{Jane Street}: One of 60 selected participants for the First-Year Trading \& Technology Programme.}
-      \resumeItem{\textbf{IMC Trading}: One of 15 selected participants for Launchpad. 4th place in the individual low-latency challenge.}
-      \resumeItem{\textbf{Macquarie Group}: One of 30 selected participants for the Technology Insight Programme.}
-    \end{resumeItemList}
-
-  \resumeSubheading
-    {Cure53}{May 2023 -- Present}
-    {Freelance Security Engineer}{Berlin, Germany (Remote)}
-    \begin{resumeItemList}
-      \resumeItem{Performed 20+ code audits and VAPTs for \link{https://cure53.de/\#publications}{global clients}, including Fortune 20
-       companies.}
-      \resumeItem{Targets included web applications, browser extensions,
-                  Electron-based desktop applications, and mobile
-                  applications.} \end{resumeItemList}
-
-  \resumeSubheading
-    {TikTok}{Apr. 2023 -- Sep. 2023}
-    {Security Engineer Intern}{Singapore}
-    \begin{resumeItemList}
-      \resumeItem{Discovered 50+ security vulnerabilities affecting critical
-                  internal and external facing services, such as TikTok.}
-      \resumeItem{Developed Java extension on Burp Suite's new Montoya API for
-                  testing protobuf over both WebSockets and HTTP(s), a feature
-                  not supported by any open-source extension at the time of
-                  development.}
-      \resumeItem{Wrote and deployed to K8s a deliberately vulnerable app in
-                  React and Express used as part of an internal competition.}
-      \resumeItem{Researched at scale: Protobuf over WebSockets, XSS filter
-                  bypasses, and rich text editor vulnerabilities.}
-      \resumeItem{Weaponised a 0-day in an online word processor to harvest
-                  employee credentials in a red team operation.}
-    \end{resumeItemList}
+\resumeSubheading{National University of Singapore}{Aug. 2025 -- Nov. 2025}{Student Teaching Assistant}{Singapore}
+\begin{resumeItemList}
+    \resumeItem{Coached a class of $16$ students in ST1131 Introduction to Statistics and Statistical Computing course on R programming, probability, and statistics. Designed quiz questions for subsequent batches.}
+\end{resumeItemList}
+\resumeSubheading{Mathlete Training Centre}{Dec. 2020 -- Jan. 2021}{Math Olympiad Curriculum Developer}{Singapore}
+\begin{resumeItemList}
+    \resumeItem{Coached Singapore Team juniors in International Mathematics and Science Olympiad (IMSO) as an ex-participant.}
+\end{resumeItemList}
 \end{resumeSubHeadingList}
 
-%-----------PROJECTS-----------
-\section{Hackathons \& Projects}
+\section{Projects}
 \begin{resumeSubHeadingList}
-
-  \resumeProjectHeading{
-    \link{https://www.eurekapad.app/}{\textbf{EurekaPad}} $|$
-    \emph{Next.js $\cdot$ TailwindCSS $\cdot$ Convex $\cdot$ Clerk $\cdot$
-          Radix UI $\cdot$ Vercel $\cdot$ Azure Cognitive Services}}{}
-  \begin{resumeItemList}
-    \resumeItem{Raised \$16,000 in equity-free funding.}
-    \resumeItem{Won Fitzelerate 2025, the Queen's College Entrepreneurship
-                Competition 2025, and the SUTD Baby Shark fund.}
-    \resumeItem{AI-powered technical writing tool. Runnable code blocks,
-                intuitive math editor, interactive graphs, real-time
-                collaboration, \LaTeX\ and PDF exports, and AI-powered ``vibe
-                writing''.}
-  \end{resumeItemList}
-
-  \resumeProjectHeading{
-    \link{https://github.com/zeyu2001/camhack-frontend}{\textbf{$\lnot$
-          Catfish}} $|$
-    \emph{Next.js $\cdot$ TailwindCSS $\cdot$ Radix UI $\cdot$ Flask $\cdot$
-          Vercel $\cdot$ Tavily $\cdot$ Antrophic API $\cdot$ Instagram OAuth
-          $\cdot$ Tinder API}}{}
-  \begin{resumeItemList}
-    \resumeItem{2nd Place @ Cam Hack 2024 (Cambridge University Hackathon).}
-    \resumeItem{AI-powered Tinder dating assistant -- automatic profile
-                updates, match compatibility, smart opening lines, and date
-                ideas.}
-  \end{resumeItemList}
-
-  \newpage
-
-  \resumeProjectHeading{
-    \link{https://github.com/zeyu2001/EduAble}{\textbf{EduAble}} $|$
-    \emph{Next.js $\cdot$ TailwindCSS $\cdot$ PostgreSQL $\cdot$ Vercel $\cdot$
-          OpenAI API}}{}
-  \begin{resumeItemList}
-    \resumeItem{2nd Place @ Cambridge Generative AI Hackathon 2024, Finalist @ Fitzelerate 2024}
-    \resumeItem{STEM notetaking app with real-time audio transcription to
-                Markdown \& LaTeX, and AI-generated summaries \& quizzes.}
-  \end{resumeItemList}
-
-  \resumeProjectHeading{
-    \link{https://github.com/ECHO-LONDON/ECHO-Web}{\textbf{Echo}} $|$
-    \emph{Next.js $\cdot$ TailwindCSS $\cdot$ Vercel $\cdot$ Reddit, Twitter
-          API + OAuth}}{}
-  \begin{resumeItemList}
-    \resumeItem{Most Promising AI x Web3 Build, 1st Prize @ Encode Club London
-                AI Hackathon 2024}
-    \resumeItem{Social media aggregator that provides personalised feed for
-                users to regain control of their social media algorithms.}
-  \end{resumeItemList}
-
-  \resumeProjectHeading{
-    \link{https://github.com/zeyu2001/Ambrose}{\textbf{Ambrose}} $|$
-    \emph{TypeScript $\cdot$ React $\cdot$ TailwindCSS}}{}
-  \begin{resumeItemList}
-    \resumeItem{1,200+ downloads.}
-    \resumeItem{Chrome extension that automatically answers trivia questions
-                and reminds users of pending trivia quizzes in an online game.}
-  \end{resumeItemList}
-
+\resumeProjectHeading{\link{https://github.com/Mingyuan03/yasumax}{\textbf{YasuMax Academic Calendar}} $|$ \emph{Gradle $\cdot$ Maven $\cdot$ CSS}}{}
+\begin{resumeItemList}
+    \resumeItem{Created for CS2103T Software Engineering course in NUS. Awarded full credit in individual project component.}
+    \resumeItem{Implemented a web-based CLI-optimised calendar with Java Gradle.}
+\end{resumeItemList}
 \end{resumeSubHeadingList}
-
-\section{Professional Highlights}
-\begin{resumeSubHeadingList}
-
-  \resumeProjectHeading{\textbf{Speaking Engagements}}{}
-  \begin{resumeItemList}
-    \resumeItem{\emph{Client-Side Attacks in a Post-XSS World} -- pwnEd 5
-                      (University of Edinburgh), BSides Cymru/Wales, 2024.}
-    \resumeItem{\emph{XS-Leaks -- Client-Side Attacks in a Post-XSS World} --
-                      BSides London, 2023.}
-    \resumeItem{\emph{HTTP Request Smuggling in the Multiverse of Parsing
-                      Flaws} -- BSides Singapore, 2022.}
-    \resumeItem{\emph{Learn Hacking Through CTF Competitions} -- Division Zero
-                      Bug Bounty Quarter, 2022.}
-  \end{resumeItemList}
-
-  \resumeProjectHeading{\textbf{Cybersecurity Vulnerability Research \& Bug Bounty}}{2022 -- 2023}
-  \begin{resumeItemList}
-    \resumeItem{Discovered security vulnerabilities in popular open-source
-                software. Credited for 15 vulnerabilities in the CVE database.}
-    \resumeItem{Performed penetration tests for global companies through the
-                HackerOne platform, uncovering $>50$ valid security issues.}
-      \begin{resumeItemSubList}
-        \resumeItem{Achieved maximum lifetime signal-to-noise rating across
-                    multiple private \& public programs, with zero invalid
-                    reports.}
-        \resumeItem{Competed against top hackers from around the world and
-                    emerged as top bug bounty hunter in the invite-only
-                    Ministry of Defense Bug Bounty Programme 2022 and GovTech
-                    Government Bug Bounty Programme 2023.}
-      \end{resumeItemSubList}
-  \end{resumeItemList}
-
-  \resumeProjectHeading{\textbf{Cybersecurity Competitions}}{2022 -- 2023}
-  \begin{resumeItemList}
-    \resumeItem{Founded Social Engineering Experts, the top Singapore computer
-                security Capture the Flag (CTF) team in 2022 and 2023.}
-    \resumeItem{Core member and web security player for Blue Water, the global
-                top CTF team in 2023. Finalist @ DEF CON 31-32 CTF. }
-    \resumeItem{Led organization of SEETF, a global competition with $>$2,000
-                players and near-perfect public voting scores in 2022-23.}
-    \resumeItem{Built cybersecurity challenges attempted by thousands of
-                players in competitions and on platforms such as Hack The Box.}
-  \end{resumeItemList}
-\end{resumeSubHeadingList}
-
-\section{Technical Skills}
-\begin{itemize}[leftmargin=0.15in, label={}]
-  \small{\item{
-        \textbf{Languages}{: TypeScript $\cdot$ Python $\cdot$ Java $\cdot$ OCaml $\cdot$ Go $\cdot$ SQL $\cdot$ \LaTeX} \\
-        \textbf{Frameworks}{: React $\cdot$  Next.js $\cdot$ TailwindCSS $\cdot$  Prisma $\cdot$ Flask $\cdot$ Django} \\
-        \textbf{Developer Tools}{: Git $\cdot$ Docker $\cdot$  Vagrant $\cdot$ Google Cloud Platform $\cdot$ Kubernetes $\cdot$ Unix} \\
-        \textbf{Cybersecurity Certifications}{: OSCP $\cdot$ OSWE $\cdot$ CRT $\cdot$ Burp Suite Certified Practitioner}
-        }}
-\end{itemize}
 
 \section{Honours \& Awards}
-\setlength{\tabcolsep}{6.0pt}
-\renewcommand{\arraystretch}{1.1}
-\fontsize{8.5}{11}\selectfont
-\awardsTable{
-  \awardsTableRow{Encode Club London AI Hackathon}{\nth{1} Place, AI x Web3
-                  Build}{Hackathon}{Global}{Encode Club}{2024}
-  \awardsTableRow{Cam Hack 2024}{\nth{2} Place}{Hackathon}{UK}{CUCaTS,
-                  CUAI}{2024}
-  \awardsTableRow{Cambridge Generative AI Hackathon}{\nth{2}
-                  Place}{Hackathon}{UK}{GetSeen Ventures}{2024}
-  \awardsTableRow{HackSingapore}{Finalist (Top 3)}{Hackathon}{SG}{Tribe}{2022}
-  \awardsTableRow{STACK the Codes Hackathon}{Finalist (Top
-                  7)}{Hackathon}{SG}{GovTech}{2021}
-  \awardsTableRow{Tech For Good Festival}{Most
-                  Impactful}{Hackathon}{SG}{Engineering Good}{2021}
-  \awardsTableRow{Today I Learned AI Camp (University)}{\nth{4} Place}{AI
-                  Hackathon}{SG}{DSTA}{2021} \hline
-  \awardsTableRow{Fitzelerate}{Finalist (Top
-                  7)}{Entrepreneurship}{UK}{Fitzwilliam College}{2024} \hline
-  \awardsTableRow{Government Bug Bounty Programme 8--9}{Top Bug Bounty
-                  Hunter}{Bug Bounty}{Global}{GovTech}{2023}
-  \awardsTableRow{MINDEF Bug Bounty Programme}{Top Bug Bounty Hunter}{Bug
-                  Bounty}{Global}{MINDEF}{2022} \hline
-  \awardsTableRow{LakeCTF}{\nth{1} (Finals)}{Security CTF}{Global}{EPFL}{2024}
-  \awardsTableRow{Mine the Matrix}{Finalist (Top 30)}{Security
-                  CTF}{Europe}{Bending Spoons}{2024}
-  \awardsTableRow{BSides Cymru/Wales Community CTF}{\nth{1} Place}{Security
-                  CTF}{UK}{Admiral}{2024}
-  \awardsTableRow{pwnEd 5}{\nth{1} (Qualifiers), \nth{1} (Finals)}{Security
-                  CTF}{UK}{University of Edinburgh}{2024}
-  \awardsTableRow{DEF CON CTF}{\nth{1} (Qualifiers), \nth{2} (Finals)}{Security
-                  CTF}{Global}{Nautilus Institute}{2023}
-  \awardsTableRow{HITCON CTF}{\nth{1} (Qualifiers), \nth{9} (Finals)}{Security
-                  CTF}{Global}{HITCON}{2023}
-  \awardsTableRow{CSAW CTF (Europe)}{\nth{1} (Qualifiers) \nth{3}
-                  (Finals)}{Security CTF}{Europe}{New York University}{2023}
-  \awardsTableRow{HackTM CTF}{\nth{2} (Finals)}{Security
-                  CTF}{Global}{HackTM}{2023}
-  \awardsTableRow{Grey Cat The Flag}{\nth{3} Place}{Security
-                  CTF}{Global}{National University of SG}{2023}
-  \awardsTableRow{Cyber SEA Games}{\nth{2} Place}{Security
-                  CTF}{SEA}{AJCCBC}{2022} \hline
-  \awardsTableRow{Best in Knowledge (Cyber)}{-}{Military
-                  Award}{SG}{MINDEF/SAF}{2021}
-  \awardsTableRow{Distinguished Honor Graduate (Cyber)}{-}{Military
-                  Award}{SG}{MINDEF/SAF}{2021} \hline
-  \awardsTableRow{National Olympiad for Informatics}{Bronze
-                  Award}{Programming}{SG}{National University of SG}{2019} }
+\begin{itemize}[leftmargin=0.15in,label={$\star$},itemsep=-0.3em]
+    \small{\item{\link{https://certificates.nextid.com/certificate?id=7d81aed6-5d6a-408d-b030-9e592d215015}{DSTA BrainHack Hackathon CODE\_EXP Junior Category 2023's Team Best MVP (Runner-Up)}}}
+    \small{\item{$32$nd Singapore Physics Olympiad (Silver) 2020}}
+    \small{\item{Lee Kuan Yew Award for Mathematics and Science 2019}}
+    \small{\item{Singapore International Mathematical Olympiad Senior Teams 2016 \& 2017 (Precursor to National Teams, comprising top 50 high-school Mathematical Olympians across all levels)}}
+    \small{\item{Singapore Mathematical Olympiad Senior (Gold) 2017}}
+\end{itemize}
 
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in,label={$\star$},itemsep=-0.3em]
+    \small{\item{\textbf{Programming Languages (Intermediate or Advanced Level)}{: Java $\cdot$ Python $\cdot$ C $\cdot$ PostgreSQL $\cdot$ R}}}
+    \small{\item{\textbf{Programming Languages (Beginner Level)}{: JavaScript $\cdot$ HTML $\cdot$ CSS $\cdot$ MATLAB}}}
+    \small{\item{\textbf{Developer Tools}{: VS Code $\cdot$ Vim $\cdot$ Git $\cdot$ PyCharm $\cdot$ pgAdmin4 $\cdot$ Tableau}}}
+    \small{\item{\textbf{Frameworks}{: Gradle $\cdot$ Maven $\cdot$ PyTorch $\cdot$ TensorFlow $\cdot$ pandas $\cdot$ numPy $\cdot$ sklearn $\cdot$ matplotlib $\cdot$ PySpark}}}
+    \small{\item{\textbf{Typesetting Languages}{: TeX $\cdot$ Markdown}}}
+\end{itemize}
+
+\section{Languages}
+\begin{itemize}[leftmargin=0.15in,label={$\star$},itemsep=-0.3em]
+    \small{\item{\textbf{Native or Bilingual Proficiency}{: English, Mandarin}}}
+\end{itemize}
+
+\section{Hobbies \& Interests}
+\begin{itemize}[leftmargin=0.15in,label={$\star$},itemsep=-0.3em]
+    \small{\item{\textbf{Integration}{: Finalist, UK University Integration Bee (Singapore Chapter) 2025}}}
+    \small{\item{\textbf{Mental Abacus}{: Finalist, NUS Arithmetic Contest 2025 (Score: 98/100)}}}
+    \small{\item{\textbf{History Trivia}{: Team Finalist, Singapore History Bee and Bowl Championship 2017}}}
+\end{itemize}
+
+\section{Community Involvement}
+\begin{resumeSubHeadingList}
+\resumeSubheading{Agency for Integrated Care}{Aug. 2025 -- Present}{Silver Generation Ambassador}{Singapore}
+\begin{resumeItemList}
+    \resumeItem{Conducted health visits to elderly in Taman Jurong and Jurong Spring. Introduced Government schemes to promote active ageing.}
+\end{resumeItemList}
+\end{resumeSubHeadingList}
 \end{document}
